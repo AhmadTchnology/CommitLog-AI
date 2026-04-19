@@ -1,7 +1,7 @@
 {
   "name": "@ahmad_technology/commitlog-ai",
-  "version": "1.0.0",
-  "description": "AI-powered changelog generator from git commit history",
+  "version": "1.0.1",
+  "description": "Generate beautiful, human-readable CHANGELOG.md from your git commit history using AI — directly from your terminal.",
   "type": "module",
   "bin": {
     "commitlog": "./dist/bin.mjs"
@@ -39,6 +39,7 @@
   },
   "homepage": "https://github.com/AhmadTchnology/CommitLog-AI#readme",
   "dependencies": {
+    "@ahmad_technology/commitlog-ai": "^1.0.0",
     "@iarna/toml": "^2.2.5",
     "@inquirer/prompts": "^7.5.0",
     "chalk": "^5.4.1",

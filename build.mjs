@@ -17,6 +17,7 @@ await build({
     minify: true,
     sourcemap: true,
     external: nodeExternals,
+    packages: 'external',
 });
 
 console.log('✅ Build complete → dist/commitlog.mjs');
