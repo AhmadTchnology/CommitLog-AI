@@ -1,14 +1,18 @@
 {
-  "name": "commitlog-ai",
+  "name": "@ahmad_technology/commitlog-ai",
   "version": "1.0.0",
   "description": "AI-powered changelog generator from git commit history",
   "type": "module",
   "bin": {
     "commitlog": "./dist/bin.mjs"
   },
+  "files": [
+    "dist"
+  ],
   "main": "./dist/commitlog.mjs",
   "scripts": {
     "build": "node build.mjs",
+    "prepublishOnly": "npm run build",
     "dev": "tsx src/index.ts",
     "test": "vitest run",
     "test:watch": "vitest",
